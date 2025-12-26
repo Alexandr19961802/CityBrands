@@ -42,10 +42,42 @@
   }
   
   .inst {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height:45px;
+    animation: myAnim 3s linear 1s 8 normal forwards;
   }
-  
+  @keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
   .text-city {
     font-size: 14px;
     line-height: 1.4;
@@ -114,5 +146,4 @@
       font-size: 32px;
     }
   }
-
   
